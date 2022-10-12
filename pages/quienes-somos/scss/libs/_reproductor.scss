@@ -1,0 +1,183 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+#wave{
+    transition: all 0.35s linear;
+
+}
+.reproductor{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    padding: 2em 0;
+    width: 100%;
+
+ 
+}
+
+.player, .letra {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    width: 90%;
+    max-width: 900px;
+    color: #949494;
+
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 1.5rem #10101024;
+    overflow: hidden;
+
+
+}
+
+.player{
+    height:max-content;
+}
+.thumb {
+    width: 300px;
+    height: 100%;
+}
+
+.player .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player .info {
+    padding: 1rem;
+    
+
+    p{
+        color: var(--color-i);
+        padding-top: 1em;
+
+        &:hover{
+
+            cursor:pointer;
+        }
+    }
+}
+
+.player .detail {
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+    margin-bottom: 1rem;
+}
+
+.player .title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.player .title .time {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 0.25rem;
+}
+
+.player .control i {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: grid;
+    place-content: center;
+    font-size: 1.25rem;
+    background-color:var(--color-i);
+    color: var(--barra-bg);
+    font-weight: bold;
+    opacity: .8;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0rem #89ff1aaa;
+}
+
+.player .control i:hover {
+    box-shadow: 0 0 1.5rem #cdff1a83;
+    font-size: 1.5rem;
+}
+
+
+    @media screen and (max-width:720px){
+
+        .player, .letra{
+        grid-template-columns:1fr;
+    
+            .thumb{
+                // border-radius: 2em;
+                overflow: hidden;
+                width: 100%;
+                height: 150px;
+                margin: auto;
+
+        
+            }
+            
+        }
+    }
+
+
+
+
+    .letra{
+        margin-top: 1em;
+        padding: 1em;
+        height: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: height .2s ease-in;
+
+        .info{
+            margin-bottom: 2em;
+            position: sticky;
+        }
+
+        .letter{
+          
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                border-radius: 20px;
+                width: 15px;
+            }
+            &::-webkit-scrollbar-track {
+                border-radius: 20px;
+                background: transparent
+            }
+            &::-webkit-scrollbar-thumb {
+                background: var(--barra-barra);
+                border-radius: 7px;
+                opacity: .1;
+                border: 5px solid var(--barra-bg);
+
+            }
+
+            @media screen and (max-width:720px) {
+                &::-webkit-scrollbar {
+                width:0;
+            }
+            }
+
+
+            b{
+                color: var(--color-i);
+                opacity: .7;
+                display: block ;
+            }
+        }
+
+
+    }
+
+
+    .height{
+        height:300px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }

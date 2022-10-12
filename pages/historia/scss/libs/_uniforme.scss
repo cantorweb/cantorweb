@@ -1,0 +1,96 @@
+//   3    S L I D E R  U N I F O R M E 
+///////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////*/
+.slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    // border-radius: 1em;
+    overflow: hidden;
+    opacity: .9;
+    width: 300px;
+
+    &::before{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        content: "";
+        z-index: 1;
+        background: var(--card-color);
+        top: -30px;
+        left: -30px;
+        border-radius: 50%;
+
+    }
+    &::after{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        content: "";
+        z-index: 1;
+        background: var(--card-color);
+        
+        bottom: -30px;
+        right: -30px;
+        border-radius: 50%;
+    }
+
+    & ul {
+        padding: 0;
+        display: flex;
+        width: 400%;
+        animation: slider 15s ease-in-out infinite alternate;
+        animation-timing-function: linear;
+    }
+
+    &  li {
+        height:100%/2;
+        width: 100%;
+        list-style: none;
+
+        & img {
+        height: 100%;
+        width: 100%;
+        filter: sepia(.5);
+        // height: auto;
+        // height:min($numbers: );
+            }
+    }
+
+
+    @media screen and(min-width:720px){
+        width: 70%;
+        margin: auto;
+    }
+}
+
+
+
+
+@keyframes slider {
+    0% {
+        margin-left: 0;
+    }
+    10% {
+        margin-left: -100%;
+    }
+
+    40%{
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+    70%{
+        margin-left: -200%;
+    }
+
+    80% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}

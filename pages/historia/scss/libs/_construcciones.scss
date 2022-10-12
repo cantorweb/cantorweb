@@ -1,0 +1,53 @@
+.aquiEstuvimos{
+    padding-top: 30px;
+    position: relative;
+
+
+    .container-t{
+        display: flex;
+        margin: 20px 0;
+
+
+        img{
+            width: 25%;
+            max-width: 300px;
+            object-fit: cover;
+            margin-right: 1em;
+            border-radius: 2px;
+        }
+
+        p{
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+        }
+    }
+}
+
+
+.bx-home-alt{
+    // icon box-icon de home 
+    font-size: 2em;
+    margin-right: 1em;
+    position: absolute;
+    right: 0;
+    opacity: .6;
+}
+
+
+@media screen and (max-width:720px){
+    .aquiEstuvimos{
+        padding: 10px;
+
+        .container-t {
+            flex-direction: column;
+
+
+            img{
+                width: 90%;
+                margin: auto;
+                margin-top: 1em;
+            }
+        }
+    }
+}

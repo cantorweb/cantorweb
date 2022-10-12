@@ -1,0 +1,203 @@
+// handle
+
+html{
+    box-sizing: border-box;
+}
+
+.header{
+    background: -webkit-linear-gradient(to bottom,hsla(0, 0%, 0%, 0.863), hsla(0, 0%, 0%, 0.342)), url(./backs/cancha.jpg);
+    background: linear-gradient(to bottom,hsla(0, 0%, 0%, 0.459), hsla(0, 0%, 0%, 0.712)), url(./backs/cancha.jpg);
+
+    background-size:cover;   
+    background-attachment:fixed;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+
+    display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:flex-start;
+}
+
+
+.welcomePrimary{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // padding-top: 60px;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: 70%;
+
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 100%;
+        opacity: .96;
+        overflow: hidden;
+
+        img{
+            height:100%;
+        }
+
+    }
+
+    span{
+        padding: 0em 2em;
+        margin-top: 2em;
+        width: 100%;
+        text-align: center;
+        color:#fff;
+        text-shadow: 2px 0 10px #000;
+
+        h2{ 
+        color: inherit;
+        font-size: 2rem;
+        padding-bottom: .5em;
+        }
+
+        p{
+            
+            line-height: 1.5;
+            color: inherit;
+            opacity: .6;
+            font-size: 1em;
+
+      
+        }
+        .lema{
+            margin-top: 1.2em;
+            font-size: 1.2em;
+            opacity: 1;
+            color: var(--color-i);
+        }
+    }
+}
+
+@media screen and (min-width:720px){
+    .welcomePrimary{
+        flex-direction: row;
+        align-items: center;
+        height: 80%;
+        margin-bottom: 2em;
+        width:100%;
+        // max-width: 1080px;
+        .img{
+            // transform: translateX(-10%);
+            width:30%;
+            max-height: 400px;
+
+        }
+        
+        span{
+            width: 60%;
+            text-align: left;
+            padding-right: 3em;
+
+            h2{
+                font-size: 3rem;
+            }
+            
+            p{
+                width: 100%;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+
+
+
+.welcomeMore{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+
+    .bx{
+        color: var(--color-i);
+        text-shadow: 0 0 10px var(--color-i);
+        font-size: 4em;
+	        animation: bounce-top 2.5s infinite alternate;
+    }
+
+
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+#book--hoja--1{
+    animation: pages 7s ease-in-out infinite alternate;
+    transform:translateX(-50%) rotate(-25deg) translateY(30%);
+    animation-delay: .5s;
+
+
+}
+#book--hoja--2{
+    animation: pages 7s ease-in-out infinite alternate;
+    transform:translateX(-50%) rotate(-25deg) translateY(30%)
+
+}
+
+@keyframes pages{
+
+    20%{
+        // transform:translateX(-60%) rotate(-25deg) translateY(30%)
+        transform:translateX(0) rotate(0) translateY(0)
+
+
+    }
+    50%{
+        // transform:translateX(-60%) rotate(-25deg) translateY(30%)
+        transform:translateX(0) rotate(0) translateY(0)
+
+
+    }
+    // 50%{
+    //     transform:translateX(-30%) rotate(-10deg) translateY(10%)
+    // }
+}

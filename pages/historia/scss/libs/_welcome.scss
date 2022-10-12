@@ -1,0 +1,102 @@
+// handle
+
+html{
+    box-sizing: border-box;
+}
+.welcome-historia{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 60vh;
+
+    .img-book{
+        box-sizing: border-box;
+        width: 60%;
+        margin: 0 auto;
+        opacity: .9;
+        overflow: hidden;
+        transform: translateX(15%);
+
+    }
+
+    span{
+        margin-top: 2em;
+        width: 100%;
+        text-align: center;
+
+        h2{
+            font-size: 3rem;
+            opacity: .8;
+
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (min-width:720px){
+    .welcome-historia{
+        flex-direction: row;
+        height: 70vh;
+        margin-bottom: 2em;
+        width: 60vw;
+        max-width: 1080px;
+
+        .img-book{
+            transform: translateX(-10%);
+            width: 40%;
+            max-width: 300px;
+
+        }
+        
+        span{
+            width: 60%;
+            text-align: left;
+
+            
+            p{
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#book--hoja--1{
+    animation: pages 7s ease-in-out infinite alternate;
+    transform:translateX(-50%) rotate(-25deg) translateY(30%);
+    animation-delay: .5s;
+
+
+}
+#book--hoja--2{
+    animation: pages 7s ease-in-out infinite alternate;
+    transform:translateX(-50%) rotate(-25deg) translateY(30%)
+
+}
+
+@keyframes pages{
+
+    20%{
+        // transform:translateX(-60%) rotate(-25deg) translateY(30%)
+        transform:translateX(0) rotate(0) translateY(0)
+
+
+    }
+    50%{
+        // transform:translateX(-60%) rotate(-25deg) translateY(30%)
+        transform:translateX(0) rotate(0) translateY(0)
+    }
+
+}

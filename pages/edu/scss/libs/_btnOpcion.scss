@@ -1,0 +1,93 @@
+
+
+// body, html { 
+//   margin: 0; 
+//   padding: 0; 
+//   height: 100%; 
+//   width: 100%; 
+
+// }
+
+%test {
+  position: absolute;
+	content: '';
+	transition: all .5s;
+}
+
+.opcionGame{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.op-container{
+	width: min-content;
+}
+.button { 
+	min-width: 250px;
+	text-align: center;
+	display: inline-block; 
+	padding: 10px 10px;
+	color: white;
+	position: absolute;
+	vertical-align: middle;
+	font-family: 'Rubik One', sans-serif;
+	text-decoration: none;
+	font-size: 1em;
+	transition: all .5s;
+	background-color: #99b36e;
+
+	&::before {
+    @extend %test;
+		bottom: -15px;
+		height: 15px;
+		width: 100%;
+		left: 8px;
+		transform: skewX(45deg);
+		background-color: darken(#99b36e, 20%);
+	}
+
+	&::after {
+		@extend %test;
+		right: -15px;
+		height: 100%;
+		width: 15px;
+		bottom: -8px;
+		transform: skewY(45deg);
+		background-color: darken(#99b36e, 30%);
+	}
+
+	&:active {
+		margin-left: 10px;
+		margin-top: 10px;
+		&::before {
+			bottom: -5px;
+			height: 5px;
+			left: 3px;
+		}
+		
+    &::after {
+			right: -5px;
+			width: 5px;
+			bottom: -3px;
+		}	
+	}
+}
+
+.b1{
+	transform: translateY(-100%) translateX(-50%);
+}
+
+.b2{
+	transform: translateY(100%) translateX(-50%);
+
+}
+@media (max-width:720px){
+	.b1{
+	transform: translateY(-300%) translateX(-50%);
+	}
+
+	.b2{
+		transform: translateY(-100%) translateX(-50%);
+	}
+}

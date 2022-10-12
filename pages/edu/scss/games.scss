@@ -1,0 +1,114 @@
+:root{
+    --edu-bg:#00000018;
+}
+
+body.darkmode{
+    --edu-bg:#c8e2ff09;
+}
+.wave{
+    width: 100%;
+}
+
+@import "./libs/leon";
+@import "./libs/btnOpcion";
+@import "./libs/layout";
+
+.edu{
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    // clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+    &__text{
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        // font-family: 'Handlee', sans-serif;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 3rem;
+            opacity: .78;
+         
+        }
+        p{
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .firtsP{
+            margin-top: 1rem;
+            color: var(--color-i);
+        }
+       
+    }
+
+    &__img{
+        margin: auto;
+        width: 100%;
+        padding: 1rem;
+        overflow: hidden;
+
+        svg{
+            transform: translateX(7%);
+
+        }
+    }
+
+
+}
+
+    @media screen and (min-width:720px){
+        .edu{
+            padding-top: 5em;
+            grid-template-columns: 40% 50%;
+
+
+            &__text{
+                text-align: left;
+                align-items:flex-start;
+                text-align: justify;
+                h2{
+                    font-size:3.2rem ;
+                }
+                p{
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+            }
+
+            &__img{
+                 svg{
+                    transform: translateX(14%);
+
+                }
+            }
+
+
+            }
+        }
+
+
+
+
+
+
+    //ambientción del svg con imagen de las materias para que no sea tan opaco 
+    .globo{
+        opacity: .8;
+
+    
+    }
+body.darkmode .globo{
+    opacity: .5;
+}
+
+#man{
+    stroke: #fff;
+}

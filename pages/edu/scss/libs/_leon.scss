@@ -1,0 +1,296 @@
+// $bg:#eee;
+
+// body.darkmode{
+//     $bg:#0d131a;
+
+.animacion{
+    width: 100%;
+    overflow: hidden;
+    background: var(--edu-bg);
+}
+
+.wrapper{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+ 
+  
+}
+@media (max-width:720px){
+    .lion{
+        margin:auto;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+        // grid-template-rows: 1fr 1fr;
+    }
+}
+    
+
+.lion{
+    margin-left: auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+}
+
+.hair-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    animation: rotateHair 3s
+    infinite ease-in-out;
+
+}
+/*background-color: #5e1e06;*/
+.hair {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background-color: #5e1e06;
+    
+    
+}
+
+.face{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+.ear {
+    position: absolute;
+    height: 30px;
+    width: 25px;
+    left: 105%;
+    top: 5%;
+    background-color: #CD604D;
+    z-index: 3;
+    border: 5px solid #E38002;
+    animation: moveEar 3s infinite ease-in-out;
+}
+
+.eye {
+    position: absolute;
+    width: 14%;
+    height: 14%;
+    bottom: 60%;
+    left: 60%;
+    background-color: black;
+    z-index: 2;
+    animation: moveEye 3s infinite ease-in-out;
+
+    border-radius: 10% 30%;
+}
+
+.orange-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: rotateOrange 3s infinite ease-in-out;
+}
+
+.orange {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    background-color: #E38002;
+
+    
+
+}
+
+.bigMouth-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    animation: rotateBigMouth 3s infinite ease-in-out;
+}
+
+.bigMouth {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 20%;
+    left: 20%;
+    background-color: #ecb33e;
+}
+
+.bigMouth::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 15px solid 
+    transparent;
+    border-top: 15px solid rgb(0, 0, 0);
+    border-left: 15px solid black;
+    border-bottom: 15px solid transparent;
+    z-index: 3;
+
+
+}
+
+.smallMouth-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: rotSmallMouth 3s infinite ease-in-out; 
+}
+
+.smallMouth {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 50%;
+    left: 25%;
+    background-color: #edb33e;
+}
+
+
+/*KEYFRAMES*/
+
+@keyframes rotateHair {
+    0%{
+        transform: rotate(-360deg);
+       
+        
+    }
+    15%{
+        transform: rotate(-360deg);
+       
+    }
+    35%{
+        transform: rotate(-180deg);
+        
+    }
+    65%{
+        transform: rotate(-180deg);
+        
+    }
+    85%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+      
+    }
+}
+
+
+
+@keyframes rotateOrange {
+    0%{
+        transform: rotate(0deg);
+    }
+    15%{
+        transform: rotate(0deg);
+    }
+    35%{
+        transform: rotate(-180deg);
+    }
+    65%{
+        transform: rotate(-180deg);
+    }
+    85%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotateBigMouth{
+    15%{
+        transform: rotate(0deg);
+    }
+    35%{
+        transform: rotate(90deg);
+    }
+    65%{
+        transform: rotate(90deg);
+    }
+    85%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotSmallMouth{
+    15%{
+        transform: rotate(0deg);
+    }
+    35%{
+        transform: rotate(-90deg);
+    }
+    65%{
+        transform: rotate(-90deg);
+    }
+    85%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveEye{
+    15%{
+        left: 60%;
+        transform: translate(0px);
+    }
+    35%{
+        left: 40%;
+        transform: translate(-100%);
+    }
+    65%{
+        left: 40%;
+        transform: translate(-100%);
+    }
+    85%{
+        left: 60%;
+        transform: translate(0px);
+    }
+}
+
+@keyframes moveEar{
+    15%{
+        left: 105%;
+        transform: translate(0px);
+    }
+    35%{
+        left: -7%;
+        transform: translate(-100%);
+    }
+    65%{
+        left: -7%;
+        transform: translate(-100%);
+    }
+    85%{
+        left: 105%;
+        transform: translate(0px);
+    }
+}
+

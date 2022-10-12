@@ -1,0 +1,235 @@
+:root{
+    --card-block:#f1f1f183;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width:0;
+}
+body.darkmode{
+
+    --card-block:#000000cc;
+}
+.barra-bg{
+    background:var(--barra-bg);
+}
+main{
+    padding-top: 70px;
+    width: 100%;
+    height: 100vh;
+
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.479), rgba(43, 43, 43, 0.5)), url(https://i.ibb.co/9rR4Hn2/pixel.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.darkmode main{
+    background:linear-gradient(to bottom, rgba(0, 89, 255, 0.315), rgba(0, 0, 0, 0.562)), url(https://i.ibb.co/DV5GCRH/ce2c705a5cec179fb1ea249ef7e784b4.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+}
+
+#encabezado, .opcion{
+    background:var(--card-block);
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: .7em;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.692);
+    // backdrop-filter: blur(5px);
+}
+body.darkmode #encabezado, body.darkmode .opcion{
+    box-shadow:none;
+    background:var(--card-block);
+
+}
+#encabezado, .opcion:hover{
+    cursor: pointer;
+}
+#encabezado{
+    position: relative;
+    width: 70%;
+    min-height: 30vh;
+    max-height: 70vh;
+    margin: auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    padding: 2em 1em;
+    gap: 1em;
+
+    .btn-ayuda{
+
+        height: 30px;
+        padding: .4em 1em;
+        position: absolute;
+        top:-30px;
+        border-radius: 1em 1em 0 0;
+        text-decoration: none;
+        color: var(--color-text);
+        background: var(--barra-bg);
+      
+    }
+
+    span{
+        width: 80%;
+        font-size: 1.2em;
+        font-weight:600;
+        text-align: center;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .s{
+            font-size: 3rem;
+            color:#5b7238;
+        }
+
+    }
+
+    
+
+    img{
+    //    width: 70%;
+       max-height: 30vh;
+       border-radius: .5em;
+    }
+}
+
+.opcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    min-height:15vh;
+
+    font-weight: 600;
+}
+
+.opcion:hover{
+    transform: scale(.95);
+    background:var(--barra-bg);
+}
+body.darkmode .opcion:hover{
+    transform: scale(.95);
+    background:rgba(0, 0, 0, 0.829);
+}
+
+
+
+
+// GRID LAYOUT
+
+#tablero-de-juego{
+    padding: 0em 3em;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    justify-content: start;
+    justify-self: start;
+    // justify-items: stretch;
+
+   
+    grid-template-columns:2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2em;
+
+    grid-template-areas:
+    "pregunta p1 p2"
+    "pregunta p3 p4";
+
+    #encabezado{
+        grid-area:pregunta ;
+
+
+
+
+    }
+    #opcion1{
+        grid-area:p1;
+        margin-top: auto;
+    }
+    #opcion2{
+        grid-area:p2;
+        margin-top: auto;
+
+    }
+    #opcion3{
+        grid-area:p3;
+        margin-bottom:auto;
+    }
+    #opcion4{
+        grid-area:p4;
+        margin-bottom:auto;
+    }
+
+}
+
+@media (max-width:720px){
+
+    #tablero-de-juego{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr 1.5fr 1.5fr;
+        grid-template-areas:
+        "pregunta pregunta"
+        "pregunta pregunta"
+        "p1 p2"
+        "p3 p4";
+
+        padding:0 2em;
+        padding-top: 10px;
+
+        gap: 1em;
+            #encabezado{
+                grid-area:pregunta ;
+                min-height: 20vh;
+                max-height: 50vh;
+                width: 100%;
+                padding: 1em;
+
+                img{
+                    max-height: 20vh;
+                }
+
+                span{
+                    font-size: 1em;
+                }   
+
+            }
+            .opcion{
+                // max-height: 10vh;
+                margin: 0;
+                font-size: 1em;
+                height: min-content;
+                font-weight: 400;
+            }
+            #opcion1{
+                grid-area:p1;
+            }
+            #opcion2{
+                grid-area:p2;
+            }
+            #opcion3{
+                grid-area:p3;
+            }
+            #opcion4{
+                grid-area:p4;
+            }
+    }
+}
+
+
+.width{
+    width: 50%;
+}
