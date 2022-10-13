@@ -5,7 +5,7 @@
 Sitio Web oficial del Complejo Educativo "Pedro F. Cantor" 🦁
 Proyecto de desarrollo frontent
 
-[Visitar la página](index)
+[Visitar la página](https://cantorweb.github.io/)
 
 ## DESCRIPCIÓN
 
