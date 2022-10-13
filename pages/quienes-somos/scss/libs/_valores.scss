@@ -4,7 +4,7 @@ $hexagon-margin: 25px;
 $hexagon-title-color: #fff;
 $hexagon-border-color: var(--barra-bg);
 $hexagon-border-color--hover:var(--color-i);
-$hexagon-image-color: #90be529a;
+$hexagon-image-color: #5e8a25e0;
 $honeycomb-max-width: 1200px;
 $viewport-thereshold: $hexagon-width + $hexagon-margin;
 
@@ -52,7 +52,7 @@ body {
       text-transform: uppercase;
       color: #fff;
       font-weight: 700;
-      font-size: 1.75em;
+      font-size: 1.2em;
       transition: opacity 350ms;
       
       > small {
@@ -88,7 +88,7 @@ body {
 
     &::after {
       background: $hexagon-image-color;
-      opacity: 0.5;
+      opacity: .7;
       transition: opacity 350ms;
     }
 
