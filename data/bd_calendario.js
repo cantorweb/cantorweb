@@ -6,11 +6,7 @@ const calendario = [
         desc: "Ultimo día de clases ordinarias"
     }
     ,
-    {
-        fecha:"2022-10-14",
-        titulo:"Excursión",
-        desc:"Nivel de Bachillerato",
-    },
+
     {
         fecha:"2022-10-21",
         titulo:"Feria de Logros",

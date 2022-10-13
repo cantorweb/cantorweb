@@ -10,19 +10,19 @@ const noticias = [
 
     },
     {
-        title:"Noticia 2",
-        subtitle:"Lorem ip",
-        p:"Lorem ipsum dolor sad aliquam facilis numquam. Veritatis, sit",
-        img:"https://i.ibb.co/tbFdtCT/slider3.pnghttps://i.ibb.co/qC6qw1M/Carlos.png",
-        info:["BACHILLERATO", "30/10/21"],
-        leermas:true,
-        oculto:"lorem orem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit ad assumenda iste architecto culpa at aut reiciendis necessitatibus molestiae harum, iure error officiis enim debitis repudiandae minima fugit saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quam laboriosam et adipisci, natus velit rerum harum facilis modi ut totam nobis id necessitatibus labore numquam laborum cum accusamus err"
+        title:"Medidas sanitarias",
+        subtitle:"COVID-19",
+        p:"Pedimos a nuestros estudiantes de todos los niveles mantener las medidas sanitarias de bioseguridad dentro de la institución",
+        img:"https://i.ibb.co/HtXF2Xg/SMALL-9263-2-Small.jpg",
+        info:["Dirección", "13/10/22"],
+        leermas:false,
+        oculto:"A pesar de que"
     },
         {
-        title:"Noticia 3",
+        title:"Ejemplo",
         subtitle:"Lorem ip",
         p:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit",
-        img:"https://scontent.fsal4-1.fna.fbcdn.net/v/t39.30808-6/301213076_640278750998857_2087659786535011085_n.jpg?stp=dst-jpg_p640x640&_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHPRRfkFMpy1RUiK5WsB6bG7WM_-tq7ATHtYz_62rsBMbPrlUgDQmKzHFRQ3AkcCo7JJlbKlDwdX0HHaK0dCe-h&_nc_ohc=iNStgjwLPZEAX_REpH5&_nc_oc=AQm9zs3AAMxX2frEn9pwnrr-ExIxufkw60CubCjdHepvEzJ9fnij2DjM8TqQfSBTppU&_nc_zt=23&_nc_ht=scontent.fsal4-1.fna&oh=00_AT-p77_HOkDjGZoYZ60WK0H9lEHQ6fnMGU9QsWVjBg0jnw&oe=631D3D2D",
+        img:"https://i.ibb.co/fSqJHb0/cancha.jpg",
         info:["BACHILLERATO", "30/10/21"],
         leermas:true,
         oculto:"lorem orem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit ad assumenda iste architecto culpa at aut reiciendis necessitatibus molestiae harum, iure error officiis enim debitis repudiandae minima fugit saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quam laboriosam et adipisci, natus velit rerum harum facilis modi ut totam nobis id necessitatibus labore numquam laborum cum accusamus err"
