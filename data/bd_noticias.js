@@ -17,14 +17,5 @@ const noticias = [
         info:["Dirección", "13/10/22"],
         leermas:false,
         oculto:"A pesar de que"
-    },
-        {
-        title:"Ejemplo",
-        subtitle:"Lorem ip",
-        p:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit",
-        img:"https://i.ibb.co/fSqJHb0/cancha.jpg",
-        info:["BACHILLERATO", "30/10/21"],
-        leermas:true,
-        oculto:"lorem orem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit ad assumenda iste architecto culpa at aut reiciendis necessitatibus molestiae harum, iure error officiis enim debitis repudiandae minima fugit saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quam laboriosam et adipisci, natus velit rerum harum facilis modi ut totam nobis id necessitatibus labore numquam laborum cum accusamus err"
     }
 ]
